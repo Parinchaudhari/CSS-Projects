@@ -1,0 +1,1153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: 'Poppins', sans-serif;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+li
+{
+    list-style: none;
+}
+
+/* NAVBAR STYLING */
+
+.navbar
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:20px;
+    background-color: rgb(0, 0, 0);
+    z-index: 19;
+    color: #fff;
+}
+
+.nav-links a
+{
+    color:#fff;
+}
+
+/* LOGO */
+.logo
+{
+    display: flex;
+    font-size: 32px;
+    justify-content: center;
+    text-transform: uppercase;
+    font-weight: 1000;
+}
+.agro
+{
+    color:yellow;
+    margin-left:5px;
+}
+
+/* NAVBAR MENU */
+.menu
+{
+    display: flex;
+    gap: 1em;
+    font-size: 19px;
+    z-index: 20;
+    align-items: center;
+    margin: 0;
+}
+.menu li:hover
+{
+    background-color:yellow;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+.menu li:hover a
+{
+    color: black;
+}
+.menu li
+{   
+    padding: 5px 14px;
+    margin:0;
+}
+
+/* DROPDOWN MENU */
+.products
+{
+    position: relative;
+}
+.dropdown
+{
+    background-color: rgba(19, 19, 19, 0.892);
+    padding: 1em 0;
+    position: absolute;
+    display: none;
+    border-radius: 8px;
+    top: 35px;
+    z-index: 15;
+}
+.dropdown li + li 
+{
+    margin-top: 10px;
+}
+.dropdown li
+{
+    padding: 0.5em 1em;
+    width: 8em;
+    text-align: center;
+}
+
+.menu li:hover .dropdown a
+{
+    color:#fff;
+}
+.dropdown li:hover
+{
+    background-color: yellow;
+}
+.menu li:hover .dropdown li:hover a
+{
+    color:black;
+}
+.products:hover .dropdown
+{
+    display: block;
+}
+/* FOR HOME PAGE */
+.bkimgh{
+    background: url('imgs/berries-in-plate.jpg')no-repeat;
+    /*Photo by Julia Volk from Pexels: https://www.pexels.com/photo/fresh-berries-on-trays-in-market-5273044/*/
+    width: auto;
+    height: 120vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.bkoverlayh
+{
+    width: 100%;
+    height: 120vh;
+    background-color: rgba(0, 0, 0, 0.826);
+    z-index: 9;
+    position:absolute;
+}
+.textovermain
+{   
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+    width:100%;
+    height: 100%;
+    position: absolute;
+    z-index: 10;
+    text-align: center;
+}
+.textovermain h1
+{
+    font-size: 100px;
+    color:yellow;
+    margin-top:0;
+    padding-bottom: 40px;
+}
+.textovermain h2
+{
+    font-size: 45px;
+    color: #eee;;
+    padding-bottom: 40px;
+}
+.midcss
+{
+    background-color: #eee;
+    color:black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap:25px;
+}
+.midcssimg
+{   
+    width: 50%;
+    margin:25px;
+}
+.midcss img{
+    width: 100%;
+    border-radius: 20px;
+}
+.midcsstxt
+{   
+    width: 50%;
+    margin: 25px 25px 25px 0;
+}
+.midcsstxt h1, .midcsstxt2 h1
+{
+    font-size: 50px;
+    font-weight: 1000;
+    margin-bottom: 25px;
+}
+.midcsstxt h2, .midcsstxt2 h2
+{
+    font-size: 30px;
+}
+.midcss2
+{
+    background-color: #eee;
+    color:black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap:25px;
+}
+.midcss2 img{
+    width: 100%;
+    border-radius: 20px;
+}
+.midcssimg2
+{
+    width: 50%;
+    margin: 0px 25px 25px 0;
+}
+.midcsstxt2
+{
+    width: 50%;
+    margin:0px 25px 25px 25px;
+    text-align: right;
+}
+/* FOR DRY FRUITS PAGE */
+#main_dry {
+    margin: 0 0;
+}
+
+#header_dry {
+    text-align: center;
+    margin: 25px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#header_dry h1 {
+    font-size: 56px;
+    margin-bottom: 0;
+    font-weight: 100;
+}
+
+.section_dry {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30rem;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+}
+
+.section_dry p {
+    padding: 0 25px;
+    padding-bottom: 20px;
+}
+
+.section_dry:hover {
+    color: white;
+    background-color: black;
+}
+
+#container_dry {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+#container_dry img {
+    height: 350px;
+    width: 480px;
+    border-radius: 10px;
+}
+
+#container_dry p {
+    width: 27rem;
+}
+
+.content_dry {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.content_dry h2
+{
+    padding-top:10px;
+    padding-bottom: 10px;
+}
+
+.button_dry {
+    appearance: none;
+    background-color: #2ea44f;
+    border: 1px solid rgba(27, 31, 35, .15);
+    border-radius: 6px;
+    box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 6px 16px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    margin-bottom: 25px;
+}
+
+
+.button_dry:hover {
+    background-color: #2c974b;
+}
+
+.button_dry:focus {
+    box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
+    outline: none;
+}
+
+.button_dry:disabled {
+    background-color: #94d3a2;
+    border-color: rgba(27, 31, 35, .1);
+    color: rgba(255, 255, 255, .8);
+    cursor: default;
+}
+
+.button_dry:active {
+    background-color: #298e46;
+    box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
+}
+
+/* FOR PRODUCTS PAGE */#main_product{
+    margin: 0 25px;
+}
+#header_product{
+    text-align: center;
+    margin: 25px;
+}
+#header_product h1{
+    font-size: 56px;
+    margin-bottom: 0;
+    font-weight: 100;
+}
+.cards_product{
+    display: flex;
+    margin:35px 10px ;
+    justify-content: space-evenly;
+    background-color: #d3cecec1;
+    border-radius: 10px;
+}
+.section_product :hover{
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
+.cards_product img{
+    width: 50%;
+    height: 35%;
+    border-radius: 10px;
+}
+.content_product{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;
+    padding: 10px 10px;
+}
+.content_product h2{
+    font-size: 40px;
+    font-weight: 100;
+}
+.content_product h2:hover{
+    text-decoration: underline;
+}
+.what,.why{
+    font-size: 16.5px;
+}
+.button_product {
+  background-color: #1652F0;
+  border: 1px solid #1652F0;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family: system-ui,"Segoe UI","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+  font-size: 14px;
+  line-height: 1.15;
+  padding: 12px 16px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  width: fit-content;
+  margin-top: 5px;
+}
+.button_product:focus {
+  outline: 0;
+}
+.button_product:hover {
+  background-color: #0A46E4;
+  border-color: #0A46E4;
+}
+
+.button_product:active {
+  background-color: #0039D7;
+  border-color: #0039D7;
+}
+.hr{
+    border:none;
+    height: 5px;
+    background-color: black;
+}
+#tabletdryfruits{
+    display: none;
+}
+.tabletview{
+    display: none;
+}
+/* For WHY CHOOSE US page */
+.aboutcomp
+{
+    text-align: center;
+    padding: 4% 15% 4% 15%;
+}
+.aboutcomp h1
+{
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 50px;
+}
+.aboutcomp h2
+{
+    font-style: italic;
+    padding-bottom: 10px;
+    color: rgb(48, 48, 1);
+}
+.aboutcomp p
+{
+    font-size: 22px;
+    line-height: 1.75;
+}
+.waywemove
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border-top-style: solid;
+    border-top-width: 4px;
+    border-top-color: black;
+    padding:50px 100px 50px 100px;
+    gap:60px;
+    background-color: black;
+    color:#eee;
+}
+.waywemovetext h1
+{
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 50px;
+}
+.waywemovetext h2
+{
+    padding-top:20px;
+    padding-bottom: 20px;
+    font-size: 27px;
+    color:rgb(215, 215, 0);
+}
+.waywemovetext p
+{
+    font-size: 22px;
+    line-height: 2;
+}
+.waywemoveimg img
+{
+    width: 400px;
+    height: auto;
+}
+#ojsf
+{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 0px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 25px;
+}
+.ourjourney
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 100px 50px 100px;
+    gap: 60px;
+}
+.ourjourney>hr
+{
+    width: 108%;
+    height: 5px;
+    color: black;
+    background-color: black;
+}
+.ourjourney h1, .ourjourney h2
+{
+    padding:15px;
+    padding-left: 25px;
+}
+.ourjourney h1
+{
+    font-size: 40px;
+}
+.ourjourney p
+{
+    padding: 0px 15px 20px 25px;
+    font-size: 20px;
+}
+.y2013 hr, .y2015 hr
+{
+    width: 20%;
+    margin-left: 25px;
+    height: 3px;
+    background-color: black;
+}
+.y2013
+{
+    border-style: solid;
+    border-radius: 15px;
+    border-width: 3px;
+    align-self: flex-start;
+    width: 60%;
+}
+.y2015
+{
+    border-style: solid;
+    border-radius: 15px;
+    border-width: 3px;
+    align-self: flex-end;
+    width:60%;
+}
+.y2013:hover , .y2015:hover
+{
+    color:#eee;
+    background-color: black;
+}
+.y2013:hover h1, .y2015:hover h1
+{
+   color: yellow;
+}
+/* TABLE for WHY CHOOSE US*/
+#tableseparator
+{
+    height: 3px;
+    background-color: black;
+}
+.teamtable
+{   
+    background-color: black;
+    margin:auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width:60%;
+    border-radius: 20px;
+}
+table
+{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size:20px;
+    padding: 0px 25px 35px 25px;
+    color:#eee
+}
+
+thead
+{
+    background-color: rgb(56, 56, 56);
+    color: yellow;
+}
+
+tr:nth-of-type(even)
+{
+    background-color: rgb(56, 56, 56);
+    color:#eee;
+}
+
+th, td
+{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+th, caption, label
+{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+caption
+{   
+    font-size: 45px;
+    font-weight: 600;
+    padding-top: 25px;
+    padding-bottom: 15px;
+    color:white;
+}
+/* For Cards of Contact Us page */
+.wrapperc
+{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+    width:100%;
+    height: 100%;
+    position: absolute;
+    z-index: 10;
+    gap: 40px;
+}
+.contact-card
+{
+    background-color: rgba(99, 99, 99, 0.452); 
+    width:70%; 
+    height: auto;
+    z-index: 11;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.address
+{   
+    padding:15px;
+    width:auto;
+}
+.map
+{
+    padding: 15px;
+    background: url('imgs/map.png')no-repeat;
+    /*Screenshot from https://developers.google.com/maps/documentation/javascript/adding-a-google-map*/
+    width: 50%;
+    height: 90%;
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset 0px 0px 20px 0px black;
+    opacity: 0.7;
+}
+.contact-card h1
+{
+    padding-left:15px;
+    padding-bottom: 3px;
+    color: yellow;
+}
+.contact-card p, .contact-card h2
+{
+    padding-top:10px;
+    padding-left:15px;
+    color:#eee
+}
+.contact-card p a
+{
+    color:#eee
+}
+.contactform
+{
+    background-color: rgba(99, 99, 99, 0.452); 
+    width:70%; 
+    height:auto;
+    z-index: 11;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding:30px;
+    padding-bottom: 25px;
+    gap: 30px;
+}
+
+.contactform h1
+{
+    color:yellow;
+}
+
+form
+{   
+    font-size: 25px;
+    color:#eee;
+    display: grid;
+    grid-template-columns: 150px auto;
+    grid-column-gap: 15px;
+    width:70%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 0px 2px yellow;
+    padding: 35px;
+}
+
+label+*
+{   height:32px;
+    margin-bottom: 35px;
+    background: transparent;
+}
+
+#message
+{
+    height:90px;
+}
+
+input[type=text]
+{
+    color:#eee;
+    font-size: 20px;
+}
+
+textarea
+{
+    color:#eee;
+    font-size: 20px;
+}
+
+input[type=submit]
+{
+    height: auto;
+    font-size: 25px;
+    padding: 10px 15px 10px 15px;
+    background-color: black;
+    color:yellow;
+    border-radius: 5px;
+    justify-self: start;
+    margin-bottom: 0;
+}
+
+input[type=submit]:hover
+{
+    background-color: yellow;
+    box-shadow: 0px 0px 5px yellow, 0px 0px 15px yellow, 0px 0px 30px yellow, 0px 0px 60px yellow;
+    border: 0;
+    color:Black;
+}
+
+/* BACKGROUOND IMAGE FOR CONTACT US PAGE*/
+.bkimg{
+    background: url('imgs/berries-in-plate.jpg')no-repeat;
+     /*Photo by Julia Volk from Pexels: https://www.pexels.com/photo/fresh-berries-on-trays-in-market-5273044/*/
+    width: auto;
+    height: 144vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.bkoverlay
+{
+    width: 100%;
+    height: 144vh;
+    background-color: rgba(0, 0, 0, 0.826);
+    z-index: 9;
+    position:absolute;
+}
+
+/* FOOTER */
+footer
+{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    height: auto;
+    width: 100%;
+    padding-top: 40px;
+    color:#fff;
+}
+
+.foot-content
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.fao, .fag
+{
+    font-size: 2.1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 3rem;
+}
+
+.fao
+{
+    display: flex;
+}
+ 
+.fag
+{
+    color:yellow;
+    margin-left:5px;
+}
+
+.foot-content p
+{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 15px;
+}
+
+.foot-bottom{
+    background-color: black;
+    width: 100%;
+    padding: 20px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.foot-bottom p{
+    float: left;
+    font-size: 18px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+ }
+
+.foot-bottom p a{
+   color:yellow;
+   font-size: 18px;
+   text-decoration: none;
+ }
+
+.foot-bottom span{
+     text-transform: uppercase;
+     opacity: .4;
+     font-weight: 200;
+ }
+
+.foot-menu{
+    float: right;
+  }
+  
+.foot-menu ul{
+    display: flex;
+  }
+  
+.foot-menu ul li{
+    font-size: 18px;
+    padding-right: 13px;
+    display: block;
+}
+  
+.foot-menu ul li a{
+    color: #eee;
+    text-decoration: none;
+}
+  
+.foot-menu ul li a:hover{
+    color: yellow;
+}
+
+
+/* Social Media Icons */
+.socialmedia{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.socialmedia li{
+    margin: 0 10px;
+}
+
+.socialmedia a{
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 50%;
+    justify-content: space-around;
+}
+
+.socialmedia i{
+    text-align: center;
+    font-size: 1.1rem;
+    width: 20px;
+    transition: color .4s ease;
+}
+
+.socialmedia a:hover i{
+    color:yellow;
+}
+
+/* Responsive Navbar for mobile */
+input[type=checkbox]
+{
+    display: none;
+}
+.ham
+{
+    display: none;
+    font-size: 32px;
+    font-weight: 500;
+    user-select: none;
+}
+
+/* Media queries for mobile view */
+@media screen and (max-width: 768px){
+.menu
+{
+    display: none;
+    position: absolute;
+    background-color: black;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 16px 0;
+}
+
+.menu li:hover 
+{
+    display: inline-block;
+    background-color: yellow;
+    transition: 0.3s ease;
+}
+
+.menu li + li
+{
+    margin-top: 12px;
+}
+
+input[type=checkbox]:checked ~ .menu{
+    display: block;
+    height: fit-content;
+}
+
+.ham
+{
+    display: block;
+}
+
+.dropdown
+{
+    left: 50%;
+    top: 30px;
+    transform: translateX(35%);
+}
+.dropdown li:hover 
+{
+    background-color: yellow;
+}
+/* FOR HOME PAGE */
+.textovermain h1
+{
+    font-size: 60px;
+}
+.textovermain h2
+{
+    font-size: 30px;
+}
+.midcss
+{
+    flex-direction: column;
+    text-align: center;
+    gap:0;
+}
+
+.midcssimg
+{
+    width: 70%;
+}
+.midcss2
+{
+    flex-direction: column-reverse;
+    text-align: center;
+    gap:0;
+}
+.midcssimg2
+{
+    width: 70%;
+    margin: 25px;
+}
+.midcsstxt h1, .midcsstxt2 h1
+{
+    margin-bottom: 10px;
+    font-size: 35px;
+}
+.midcsstxt h2, .midcsstxt2 h2
+{
+    font-size: 20px;
+}
+.midcsstxt
+{   
+    width: 70%;
+    margin: 0px 25px 60px 25px;
+}
+.midcsstxt2
+{
+    width: 70%;
+    margin: 0px 25px 60px 25px;
+    text-align: center;
+}
+/* FOR PRODUCTS PAGE */
+.cards_product{
+    display: block; 
+    border-radius: 10px;
+} 
+#frev
+{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.cards_product img{
+    width: 100%;
+} 
+.tabletview{
+    display: none;
+}
+.content_product{
+    margin: 0px 20px;
+}
+.normalview{
+    display: block;
+}
+.content_product h2{
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+.what, .why{
+    margin-top: 0px;
+}
+.button_product{
+    margin-top: 12px;
+    margin-bottom: 20px;
+}
+
+/* FOR DRY FRUIT PAGE */
+#container_dry {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* For WHY CHOOSE US page */
+.waywemove
+{
+    flex-direction: column;
+}
+.waywemove img
+{
+    width: 100%;
+}
+.ourjourney
+{
+    align-items: center;
+    justify-content: center;
+}
+.y2013, .y2015
+{
+    align-self: center;
+    width:auto;
+}
+.teamtable
+{
+    margin:auto;
+    width:80%;
+    margin-top:50px;
+    margin-bottom:50px;
+}
+table
+{
+    width:100%;
+    font-size: 17px;
+}
+caption
+{
+    font-size: 30px;
+}
+
+/* for Contact Us page */
+.bkimg{
+    height: 190vh;
+}
+.bkoverlay{
+    height: 190vh;
+}
+
+.contact-card
+{  
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 35px;
+}
+.address
+{
+    text-align: center;
+}
+.map
+{
+    width: 80%;
+    height: 40%;
+    margin-bottom: 20px;
+}
+
+.contactform
+{
+    margin-bottom: 30px;
+}
+
+form
+{
+    width:100%;
+    grid-template-columns: 1fr;
+    padding:0;
+    box-shadow: none;
+}
+
+input[type=submit]
+{
+    justify-self: stretch;
+}
+
+.foot-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.foot-menu ul
+{
+    display: flex;
+    flex-direction: column;
+}
+.foot-menu ul li
+{
+    padding-top: 5px;
+}
+.foot-bottom p {
+    padding-top:25px;
+    padding-bottom: 0;
+}
+}

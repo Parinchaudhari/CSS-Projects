@@ -1,0 +1,240 @@
+/* This is a mobile first apporach so css below written for first mible view and for bigger screen meadia queires is used */
+body{
+    margin: 0;
+    padding: 0;
+}
+main, header, section, aside, footer {
+    padding: 0px 0;
+    font-family: Roboto;
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+.positions{
+    position: absolute;
+    /* top: 7rem;
+    left: 6rem;*/
+    width: 25rem; 
+    color: black;
+}
+.positions h2{
+    font-size: 30px;
+    color: rgb(148, 148, 148);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 5px;
+}
+.positions p{
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.button{
+    background-color: #13aa52;
+    border: 1px solid #13aa52;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, .1) 0 2px 4px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-family: "Akzidenz Grotesk BQ Medium", BlinkMacSystemFont, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 10px 10px;
+    text-align: center;
+    margin: 10px 0;
+}
+.button a{
+    text-decoration: none;
+    color:white
+}
+
+.header {
+    background: black;
+    margin: 0 0;
+}
+.header p{
+    font-size: 30px;
+    color: white;
+    padding: 20px 30px;
+    margin-bottom: 0;
+}
+.card{
+    margin: 10px 0px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+.card-content{
+    padding: 0px 10px;
+}
+
+.hero {
+    margin: 0 0;
+    padding: 0 0;
+}
+.hero div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    padding: 0 20px;
+}
+
+.sidebar{
+    background-image: url(img/background.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000000;
+}
+
+/* Footer css */
+.footer {
+    border: 1px solid #000000;
+    background: black;
+}
+footer div{
+    margin-top: 20px;
+    margin-left: 40px;
+    padding-top: 20px;
+}
+footer div h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+footer div ul{
+    list-style: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: larger;
+}
+footer div ul li{
+    display: inline-block;
+    padding: 10px 10px;
+}
+footer div ul li a{
+    text-decoration: none;
+    color: white;
+}
+footer div ul li a:hover{
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    padding: 5px 5px;
+}
+footer div p{
+    color: white;
+    font-size: large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 0;
+    padding-bottom: 25px;
+}
+
+/* Tablet View css */
+@media only screen and (min-width:800px) {
+    .flex-container-wrapper{
+        display: flex;
+    }
+    .content{
+        width: 80%;
+    }
+    .sidebar{
+        padding-left: 2px;
+        width: 20%;
+    }
+    .flex-cards{
+        display: flex;
+    }
+    .card{
+        margin-right:10px;
+    }
+    .positions{
+        justify-content: center;
+        align-items: center;
+        width: 35rem;
+    }
+    .positions h2{
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+    .positions p{
+        font-size: 21px;
+        
+    }
+    .button{
+        font-size:15px;
+        padding: 10px 15px;
+        border-radius: 5px;
+    }
+}
+/* Desktop view normal */
+@media only screen and (min-width:1480px) {
+    
+    .positions h2{
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+    .positions p{
+        font-size: 25px;
+        
+    }
+    .button{
+        font-size:18px;
+        padding: 10px 15px;
+        border-radius: 5px;
+    }
+    
+    
+}
+
+/* Ultra wide monitors css */
+@media only screen and (min-width:1975px) {
+    .hero{
+        width: 120rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .flex-container-wrapper{
+        width: 120rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .positions{
+        width: 50rem;
+    }
+    .positions h2{
+        font-size: 65px;
+        margin-bottom: 10px;
+    }
+    .positions p{
+        font-size: 39px;
+        
+    }
+    .button{
+        font-size:43px;
+        padding: 10px 15px;
+        border-radius: 5px;
+    }
+    p{
+        font-size: xx-large;
+    }
+    .header p{
+        font-size: 50px;
+        color: white;
+    }
+    .footer{
+        font-size: xx-large;
+    }
+    .titles{
+        font-size: 50px;
+    }
+   
+}

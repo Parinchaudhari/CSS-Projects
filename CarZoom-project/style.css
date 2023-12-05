@@ -1,0 +1,465 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+header {
+    text-align: center;
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+
+.navbar h1 {
+    color: #13aa52;
+    font-size: xx-large;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    align-items: center;
+    font-size: large;
+}
+
+.navbar ul a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar ul a li {
+    padding: .5em 1.5em;
+}
+
+.navbar ul a li:hover {
+    background-color: yellow;
+    color: black;
+    border-radius: 10em;
+
+}
+
+/* css for index.html */
+#banner {
+    width: 100%;
+    height: auto;
+}
+.index_title{
+    text-align: center;
+}
+.positions {
+    width: 50rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: silver;
+}
+#heading {
+    font-size: 3em;
+}
+.color{
+    color: white;
+    font-size: larger;
+}
+.cars_available
+{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-evenly;
+    margin:1em;
+}
+.cars_available img{
+    width: 10em;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    mix-blend-mode: color-burn;
+}
+.index_h1{
+     text-align: center;
+     margin: 2em;
+}
+.card_front_all{
+    margin: 2em 8em;
+}
+
+.card_front{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2em;
+}
+.card_front img{
+    width: 15rem;
+    height: 14rem;
+}
+.card-content-front{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* about page css */
+.about_card{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3em 3em;
+    border-radius: 1em;
+}
+.about_card img{
+    /* width: 600px; */
+    /* height: 400px; */
+    height: auto;
+    max-width: 100%;
+    border-radius: .5em;
+}
+.about_info{
+    /* width: 600px; */
+    padding: 2em 0em 2em 2em;
+}
+.about_card:hover{
+    color: white;
+    background-color: black;
+}
+
+
+/* topic page css */
+.card_cars {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 4em;
+    background: #d3cecec1;
+    border-radius: 1em;
+}
+
+.card_cars img {
+    border-radius: .5em;
+    height: auto;
+    max-width: 100%;
+}
+
+.card_cars:hover {
+    background-color: black;
+    color: white;
+}
+
+.content {
+    display: flex;
+    font-family: sans-serif;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0em .5em;
+
+}
+
+.button {
+    background-color: #13aa52;
+    border: .5em solid #13aa52;
+    border-radius: 0.25em;
+    box-shadow: rgba(0, 0, 0, .1) 0 1em 2em 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-family: "Akzidenz Grotesk BQ Medium", BlinkMacSystemFont, sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    padding: .5em;
+    text-align: center;
+}
+.button a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.button-37:hover {
+    box-shadow: rgba(0, 0, 0, .15) 0 3px 9px 0;
+    transform: translateY(-2px);
+}
+
+.allcards {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-left: 5em;
+    margin-right: 2em;
+}
+
+.cards {
+    width: 25rem;
+    border: .10em solid black;
+    border-radius: .5em;
+}
+
+.cards:hover {
+    background-color: black;
+    color: white;
+}
+
+.allcards img {
+    width: 25rem;
+    height: 16rem;
+    border-radius: .5em;
+}
+.banner_bmw_tablet{
+    display: none;
+}
+
+.text {
+    padding: 1em 1em;
+}
+
+.side_header {
+    margin-left: 5em;
+}
+
+.video {
+    margin-top: 3em;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: auto auto;
+    margin-left: 5em;
+    margin-right: 5em;
+}
+
+.text_video {
+    padding: 3em 3em;
+}
+iframe{
+    width:45rem ;
+    height:25rem;
+}
+/* css for conatct page */
+.contact_container{
+    display: grid;
+    grid-template-columns: auto;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5em;
+    margin-right: 5em;
+}
+form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    flex-direction: column;
+    grid-gap: 1em;
+    align-items: center;
+    justify-content: center;
+}
+.contact_container form div{
+    margin: 1em 3em;
+}
+.contact_container form div label{
+    font-size: x-large;
+}
+.contact_container form div input{
+    font-size: large;
+    padding: .25em;
+}
+form label {
+    display: block;
+}
+
+form p {
+    margin: 0;
+}
+.contact_heading{
+    text-align: center;
+    margin:1em;
+}
+  
+.maximun {
+    grid-column: 1 / 3;
+}
+
+input,textarea {
+    padding: 1em;
+}
+  
+input:focus,textarea:focus {
+    outline: .2em solid green;
+}
+  
+input,textarea {
+    width: 100%;
+    border: .1em solid #000;
+    margin: 1em;
+}
+  
+/* css for footer  */
+
+footer {
+    background-color:black;
+}
+
+footer div {
+    margin-top: .5em;
+    margin-left: 3em;
+    padding-top: 3em;
+}
+
+footer div h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+
+footer div ul {
+    list-style: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: larger;
+}
+
+footer div ul li {
+    display: inline-block;
+    padding: .5em .5em;
+}
+
+footer div ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+footer div ul li a:hover {
+    background-color: white;
+    color: black;
+    border-radius: .5em;
+    padding: .5em .5em;
+}
+
+footer div p {
+    color: white;
+    font-size: large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 0;
+    padding-bottom: 2em;
+}
+
+
+
+
+
+/* media queries for cars page */
+
+@media only screen and (min-width:761px) and (max-width:1024px) {
+   /* css for cars page */
+    .allcards{
+        grid-template-columns: auto ;
+        align-items: center;
+        justify-content: center;
+        margin-left: 1em;
+    }
+    .cards{
+        width: 35rem;
+        margin-top: 1em;
+    }
+    .cards img{
+        height: auto;
+        width:100%;
+    }
+    .video{
+        grid-template-columns: auto;
+        margin: 0 0;
+        padding: 0 0;
+        
+    }
+    iframe{
+        max-width: 90%;
+        height: 60vh;
+        padding: 2em ;
+        margin-left: 2em;
+    }
+    .banner_bmw{
+        display: none;
+    }
+    .banner_bmw_tablet{
+        display: block;
+    }
+    /* css for about page */
+    .about_card{
+        grid-template-columns: auto;
+    }
+    .about_info{
+        padding-right: 2em;
+    }
+
+    /* css for index or home page */
+    .positions{
+        top: 30%;
+        width: 40rem;
+    }
+    .card_front_all{
+        margin: 5em 5em;
+    }
+}
+
+
+@media only screen and (max-width:760px){
+    /* css for cars page */
+    .card_cars{
+        grid-template-columns: auto;
+    }
+    .content{
+        padding: 20px;
+    }
+    .allcards{
+        grid-template-columns: auto;
+        align-items: center;
+        justify-content: center;
+        margin-left: 2em;
+    }
+    .cards{
+        margin: 1em 0em;
+    }
+    .video{
+        grid-template-columns: auto;
+        margin: 0 0;
+        padding: 0 0;
+    }
+    iframe{
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* css for about page */
+    .about_card{
+        grid-template-columns: auto;
+    }
+    .about_info{
+        padding-right: 1em;
+    }
+
+    /* css for home page */
+    .positions{
+        top: 16%;
+        width: 30rem;
+    }
+    #heading{
+        font-size: 2em;
+    }  
+    .color{
+        font-size: small;
+        padding-left: 2em;
+        padding-right: 2em;
+    } 
+    .card_front{
+        flex-direction: column;
+    }
+    .card_front_all{
+        margin: 2em 2em;
+    }
+    .cars_available img{
+        width: 5em;
+    }
+}
